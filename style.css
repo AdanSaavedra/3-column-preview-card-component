@@ -1,0 +1,107 @@
+/*Variables and body*/
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-headings-buttons);
+    margin: 0;
+}
+
+/*Container*/
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 920px;
+    height: 510px;
+}
+/*Groups*/
+.card-group{
+    padding: 50px 40px 50px 50px;
+}
+.title-group{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--background-headings-buttons);
+    margin: 30px 0;
+    font-size: xxx-large;
+}
+.p-group{
+    color: var(--paragraphs);
+    margin: 0;
+    line-height: 1.5;
+}
+.button-group{
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--background-headings-buttons);
+    margin-top: 90px;
+}
+.button-group:hover{
+    background-color: transparent;
+    color: var(--background-headings-buttons);
+    border: 2px solid var(--background-headings-buttons);
+    cursor: pointer;
+}
+
+/*Sedan*/
+.sedan{
+    background-color:var(--Bright-orange);
+    border-radius: 8px 0 0 8px;
+}
+.sedan-p{
+    margin-right: 20px;
+}
+.sedan-b{
+    color: var(--Bright-orange);
+}
+
+/*Suv*/
+.suv{
+    background-color: var(--Dark-cyan);
+}
+.suv-b{
+    color: var(--Dark-cyan);
+}
+
+/*Luxury*/
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+.luxury-b{
+    color: var(--Very-dark-cyan);
+}
+/*Media query*/
+@media(max-width: 375px){
+    .container{
+        width: 350px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto;
+    }
+    .sedan{
+        border-radius: 8px 8px 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 8px 8px;
+    }
+    .suv-p{
+        margin-right: 10px;
+    }
+    .luxury-p{
+        margin-right: 26px;
+    }
+}
+
