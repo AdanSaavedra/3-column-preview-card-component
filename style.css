@@ -17,6 +17,16 @@ body{
     background-color: var(--background-headings-buttons);
     margin: 0;
 }
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
 
 /*Container*/
 .container{
@@ -48,6 +58,8 @@ body{
     font-family: 'Lexend Deca', sans-serif;
     background-color: var(--background-headings-buttons);
     margin-top: 90px;
+    transition: all 200ms;
+    border: 2px solid var(--background-headings-buttons);
 }
 .button-group:hover{
     background-color: transparent;
